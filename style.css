@@ -33,3 +33,35 @@ input { padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;
     margin-right: 5px;
     border-radius: 2px;
 }
+
+.stat-row {
+    display: grid;
+    grid-template-columns: 100px 30px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    appearance: none;
+}
+
+/* Style the bar color for Webkit browsers (Chrome/Edge/Safari) */
+progress::-webkit-progress-value {
+    background-color: #b30000; /* Ferrari Red */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+}
+
+.rating-badge {
+    margin-top: 15px;
+    display: inline-flex;
+    border: 2px solid black;
+}
+
+.class-box { background: #ffcc00; padding: 2px 8px; font-weight: bold; }
+.rating-number { padding: 2px 8px; font-weight: bold; }
