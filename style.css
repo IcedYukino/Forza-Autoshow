@@ -32,3 +32,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/* Ensure the image stays within the card and doesn't overflow */
+.car-card img {
+    width: 100%;       /* Makes the image fit the width of the card */
+    height: 200px;     /* Sets a fixed height for consistency */
+    object-fit: cover; /* Crops/scales the image to fill the box without distortion */
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
