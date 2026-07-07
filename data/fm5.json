@@ -1,11 +1,16 @@
-[
-{ 
-"make": "Ferrari",
-"model": "250 GTO",
-"year": "1962",
-"country": "Italy",
-"class": "C",
-"rating": "460",
-"thumbnail": "(1962) Ferrari 250 GTO.png"
+{
+  "make": "Ferrari",
+  "model": "250 GTO",
+  "year": "1962",
+  "country": "Italy",
+  "class": "C",
+  "rating": 460,
+  "thumbnail": "(1962) Ferrari 250 GTO.png",
+  "stats": {
+    "SPEED": 6.5,
+    "HANDLING": 4.4,
+    "ACCELERATION": 7.6,
+    "LAUNCH": 6.7,
+    "BREAKING": 4.1
+  }
 }
-]
