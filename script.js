@@ -1,5 +1,5 @@
 // 1. Load the data
-fetch('cars.json')
+fetch('Forza Horizon 6.json')
     .then(response => response.json())
     .then(data => {
         displayCars(data);
