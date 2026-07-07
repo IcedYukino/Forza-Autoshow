@@ -19,21 +19,21 @@ function renderCars(cars) {
             <h3>${car.make} ${car.model}</h3>
             <p>
                 Year: ${car.year} | 
-                <img src="assets/flags/${country}.png" alt="${country}" style="width: 20px; vertical-align: middle;"> 
-                ${country}
+                <img src="assets/flags/${car.country}.png" alt="${car.country}" style="width: 20px; vertical-align: middle;"> 
+                ${car.country}
             </p>
             <p>Class: ${car.class} | Rating: ${car.rating}</p>
         </div>
     `).join('');
 }
 
-// Search functionality
-// Updated to search by make or model
+// Search functionality: Searches by Make, Model, or Country
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     const filtered = allCars.filter(car => 
         car.make.toLowerCase().includes(term) || 
-        car.model.toLowerCase().includes(term)
+        car.model.toLowerCase().includes(term) ||
+        car.country.toLowerCase().includes(term)
     );
     renderCars(filtered);
 });
