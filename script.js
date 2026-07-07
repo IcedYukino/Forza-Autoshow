@@ -2,8 +2,8 @@ const carGrid = document.getElementById('car-grid');
 const searchInput = document.getElementById('searchInput');
 let allCars = [];
 
-// Fetch data from the fh6.json file
-fetch('data/fh6.json')
+// Fetch data from the fm5.json file
+fetch('data/fm5.json')
     .then(response => response.json())
     .then(data => {
         allCars = data;
@@ -15,7 +15,7 @@ fetch('data/fh6.json')
 function renderCars(cars) {
     carGrid.innerHTML = cars.map(car => `
         <div class="car-card">
-            <img src="assets/fh6/${car.image}" alt="${car.name}">
+            <img src="assets/fm5/${car.image}" alt="${car.name}">
             <h3>${car.name}</h3>
             <p>Class: ${car.class}</p>
         </div>
