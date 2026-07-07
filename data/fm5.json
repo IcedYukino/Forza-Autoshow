@@ -46,5 +46,21 @@
       "LAUNCH": 8.4,
       "BREAKING": 5.4
     }
-  }  
+  },
+  {
+    "make": "Lotus",
+    "model": "Exige S",
+    "year": "2012",
+    "country": "United Kingdom",
+    "class": "B",
+    "rating": 580,
+    "thumbnail": "2012-lotus-exige-s.png",
+    "stats": {
+      "SPEED": 6.6,
+      "HANDLING": 5.1,
+      "ACCELERATION": 8.0,
+      "LAUNCH": 9.1,
+      "BREAKING": 5.3
+    }
+  },   
 ]
