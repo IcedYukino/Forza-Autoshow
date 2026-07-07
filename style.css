@@ -34,8 +34,9 @@ body {
 .car-card img {
     width: 100%;
     height: 170px;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;     /* This shows the full length of the car */
+    background-color: #fcfcfc; /* Light background to blend with the card */
+    padding: 10px;           /* Adds a little breathing room around the car */
     border-radius: 4px;
     margin-bottom: 12px;
 }
