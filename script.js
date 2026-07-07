@@ -25,32 +25,37 @@ fetch('data/fm5.json')
     .catch(error => console.error('Error loading data:', error));
 
 function renderCars(cars) {
-    carGrid.innerHTML = cars.map(car => `
-        <div class="car-card">
-            <img src="assets/fm5/cars/${car.thumbnail}" alt="${car.make} ${car.model}">
-            
-            <div class="year-country">
-                ${car.year} ${car.make.toUpperCase()} ${getFlagEmoji(car.country)}
-            </div>
-            
-            <h3>${car.model.toUpperCase()}</h3>
-            
-            <div class="stats-container" style="display: none;">
-                ${Object.entries(car.stats).map(([key, value]) => `
-                    <div class="stat-row">
-                        <label>${key}</label>
-                        <span>${value}</span>
-                        <progress value="${value}" max="10"></progress>
-                    </div>
-                `).join('')}
-            </div>
+    carGrid.innerHTML = cars.map(car => {
+        // Construct the full path
+        const imagePath = `assets/fm5/cars/${car.thumbnail}`;
+        
+        return `
+            <div class="car-card">
+                <img src="${imagePath}" alt="${car.make} ${car.model}">
+                
+                <div class="year-country">
+                    ${car.year} ${car.make.toUpperCase()} ${getFlagEmoji(car.country)}
+                </div>
+                
+                <h3>${car.model.toUpperCase()}</h3>
+                
+                <div class="stats-container" style="display: none;">
+                    ${Object.entries(car.stats).map(([key, value]) => `
+                        <div class="stat-row">
+                            <label>${key}</label>
+                            <span>${value}</span>
+                            <progress value="${value}" max="10"></progress>
+                        </div>
+                    `).join('')}
+                </div>
 
-            <div class="rating-badge">
-                <span class="class-box">${car.class}</span>
-                <span class="rating-number">${car.rating}</span>
+                <div class="rating-badge">
+                    <span class="class-box">${car.class}</span>
+                    <span class="rating-number">${car.rating}</span>
+                </div>
             </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 // Search functionality
