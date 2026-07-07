@@ -17,7 +17,11 @@ function renderCars(cars) {
         <div class="car-card">
             <img src="assets/fm5/${car.thumbnail}" alt="${car.make} ${car.model}">
             <h3>${car.make} ${car.model}</h3>
-            <p>Year: ${car.year}</p>
+            <p>
+                Year: ${car.year} | 
+                <img src="assets/flags/${car.country}.png" alt="${car.country}" style="width: 20px; vertical-align: middle;"> 
+                ${car.country}
+            </p>
             <p>Class: ${car.class} | Rating: ${car.rating}</p>
         </div>
     `).join('');
