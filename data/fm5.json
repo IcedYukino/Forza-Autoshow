@@ -1,3 +1,8 @@
 [
-    { "name": "Ferrari F40", "class": "C", "rating": "460", "image": "(1962) Ferrari 250 GTO.png" }
+"make": "Ferrari",
+"model": "250 GTO",
+"year": "1962",
+"class": "C",
+"rating": "460",
+"thumbnail": "(1962) Ferrari 250 GTO.png"
 ]
