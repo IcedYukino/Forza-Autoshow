@@ -48,6 +48,22 @@
     }
   },
   {
+    "make": "Honda",
+    "model": "#9 Target Chip Ganassi Dallara DW12",
+    "year": "2013",
+    "country": "United States",
+    "class": "X",
+    "rating": 999,
+    "thumbnail": "2013-honda-#9-target-chip-ganassi-dallara-dw12.png",
+    "stats": {
+      "SPEED": 8.6,
+      "HANDLING": 8.1,
+      "ACCELERATION": 9.8,
+      "LAUNCH": 8.4,
+      "BREAKING": 8.9
+    }
+  },
+  {
     "make": "Lotus",
     "model": "Exige S",
     "year": "2012",
