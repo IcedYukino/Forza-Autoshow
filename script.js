@@ -19,8 +19,8 @@ function renderCars(cars) {
             <h3>${car.make} ${car.model}</h3>
             <p>
                 Year: ${car.year} | 
-                <img src="assets/flags/${car.country}.png" alt="${car.country}" style="width: 20px; vertical-align: middle;"> 
-                ${car.country}
+                <img src="assets/flags/${country}.png" alt="${country}" style="width: 20px; vertical-align: middle;"> 
+                ${country}
             </p>
             <p>Class: ${car.class} | Rating: ${car.rating}</p>
         </div>
