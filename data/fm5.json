@@ -47,7 +47,23 @@
       "BREAKING": 5.4
   }
   },
-    {
+  {
+    "make": "Ferrari",
+    "model": "365 GTB/4",
+    "year": "1968",
+    "country": "Italy",
+    "class": "C",
+    "rating": 408,
+    "thumbnail": "1968-ferrari-365-gtb4.png",
+    "stats": {
+      "SPEED": 6.6,
+      "HANDLING": 3.8,
+      "ACCELERATION": 7.7,
+      "LAUNCH": 7.5,
+      "BREAKING": 3.6
+  }
+  },
+  {
     "make": "Ferrari",
     "model": "458 Italia",
     "year": "2009",
