@@ -11,49 +11,50 @@ body {
     padding: 20px;
 }
 
-/* 1. Grid: Smaller cards by increasing columns */
+/* 1. Grid: Smaller cards, more items per row */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Min width 220px */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 15px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-/* 2. Card: Compact padding */
+/* 2. Card: Compact container */
 .car-card {
     background: #ffffff;
     border-radius: 8px;
-    padding: 10px; /* Reduced padding */
+    padding: 14px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* 3. Image: Smaller height, full car visible */
+/* 3. Image: Slightly larger for prominence */
 .car-card img {
     width: 100%;
-    height: 120px; /* Shortened height */
+    height: 160px;
     object-fit: contain;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-/* 4. Font: Keeping your preferred larger size */
+/* 4. Text: Larger, impactful font */
 .year-country {
     color: #999;
-    font-size: 0.9em; /* Original, larger font */
+    font-size: 0.9em;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2px;
 }
 
 .car-card h3 {
-    font-size: 1.5em; /* Original, larger font */
+    font-size: 1.5em;
     margin-bottom: 12px;
     text-transform: uppercase;
+    line-height: 1.1;
 }
 
-/* 5. Badge: Scaled to match the smaller card */
+/* 5. Badge: Compact rating design */
 .rating-badge {
     margin-top: auto; 
     display: inline-flex;
