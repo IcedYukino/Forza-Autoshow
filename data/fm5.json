@@ -65,6 +65,22 @@
   },
   {
     "make": "Ferrari",
+    "model": "California",
+    "year": "2008",
+    "country": "Italy",
+    "class": "B",
+    "rating": 527,
+    "thumbnail": "2008-ferrari-california.png",
+    "stats": {
+      "SPEED": 7.5,
+      "HANDLING": 4.6,
+      "ACCELERATION": 7.7,
+      "LAUNCH": 8.4,
+      "BREAKING": 4.8
+  }
+  },
+  {
+    "make": "Ferrari",
     "model": "F355 Berlinetta",
     "year": "1994",
     "country": "Italy",
