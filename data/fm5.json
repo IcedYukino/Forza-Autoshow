@@ -64,6 +64,22 @@
     }
   },
   {
+    "make": "Ferrari",
+    "model": "F355 Berlinetta",
+    "year": "1994",
+    "country": "Italy",
+    "class": "B",
+    "rating": 528,
+    "thumbnail": "1994-ferrari-f355-berlinetta.png",
+    "stats": {
+      "SPEED": 7.0,
+      "HANDLING": 4.8,
+      "ACCELERATION": 7.7,
+      "LAUNCH": 7.8,
+      "BREAKING": 4.8
+    }
+  },
+  {
     "make": "Honda",
     "model": "#9 Target Chip Ganassi Dallara DW12",
     "year": "2013",
