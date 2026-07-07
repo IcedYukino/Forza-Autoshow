@@ -1,34 +1,36 @@
-{
-  "make": "Ferrari",
-  "model": "250 GTO",
-  "year": "1962",
-  "country": "Italy",
-  "class": "C",
-  "rating": 460,
-  "drivetrain": "RWD-F",
-  "thumbnail": "(1962) Ferrari 250 GTO.png",
-  "stats": {
-    "SPEED": 6.5,
-    "HANDLING": 4.4,
-    "ACCELERATION": 7.6,
-    "LAUNCH": 6.7,
-    "BREAKING": 4.1
+[
+  {
+    "make": "Ferrari",
+    "model": "250 GTO",
+    "year": "1962",
+    "country": "Italy",
+    "class": "C",
+    "rating": 460,
+    "drivetrain": "RWD-F",
+    "thumbnail": "1962-ferrari-250-gto.png",
+    "stats": {
+      "SPEED": 6.5,
+      "HANDLING": 4.4,
+      "ACCELERATION": 7.6,
+      "LAUNCH": 6.7,
+      "BREAKING": 4.1
+    }
+  },
+  {
+    "make": "Aston Martin",
+    "model": "Vanquish",
+    "year": "2012",
+    "country": "United Kingdom",
+    "class": "A",
+    "rating": 609,
+    "drivetrain": "RWD-F",
+    "thumbnail": "2012-aston-martin-vanquish.png",
+    "stats": {
+      "SPEED": 7.7,
+      "HANDLING": 4.9,
+      "ACCELERATION": 8.2,
+      "LAUNCH": 6.7,
+      "BREAKING": 5.2
+    }
   }
-},
-{
-  "make": "Aston Martin",
-  "model": "Vanquish",
-  "year": "2012",
-  "country": "United Kingdom",
-  "class": "A",
-  "rating": 609,
-  "drivetrain": "RWD-F",
-  "thumbnail": "(2012) Aston Martin Vanquish.png",
-  "stats": {
-    "SPEED": 7.7,
-    "HANDLING": 4.9,
-    "ACCELERATION": 8.2,
-    "LAUNCH": 6.7,
-    "BREAKING": 5.2
-  }
-}
+]
