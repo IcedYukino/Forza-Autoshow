@@ -13,7 +13,7 @@
       "ACCELERATION": 7.6,
       "LAUNCH": 6.7,
       "BREAKING": 4.1
-    }
+  }
   },
   {
     "make": "Aston Martin",
@@ -29,7 +29,7 @@
       "ACCELERATION": 8.2,
       "LAUNCH": 6.7,
       "BREAKING": 5.2
-    }
+  }
   },
   {
     "make": "Chevrolet",
@@ -45,7 +45,7 @@
       "ACCELERATION": 8.7,
       "LAUNCH": 8.4,
       "BREAKING": 5.4
-    }
+  }
   },
   {
     "make": "Ferrari",
@@ -61,7 +61,7 @@
       "ACCELERATION": 7.5,
       "LAUNCH": 7.2,
       "BREAKING": 4.7
-    }
+  }
   },
   {
     "make": "Ferrari",
@@ -77,7 +77,23 @@
       "ACCELERATION": 7.7,
       "LAUNCH": 7.8,
       "BREAKING": 4.8
-    }
+  }
+  },
+  {
+    "make": "Ferrari",
+    "model": "GTO",
+    "year": "1984",
+    "country": "Italy",
+    "class": "B",
+    "rating": 552,
+    "thumbnail": "1984-ferrari-gto.png",
+    "stats": {
+      "SPEED": 6.9,
+      "HANDLING": 4.8,
+      "ACCELERATION": 8.2,
+      "LAUNCH": 8.5,
+      "BREAKING": 4.7
+  }
   },
   {
     "make": "Honda",
@@ -93,7 +109,7 @@
       "ACCELERATION": 9.8,
       "LAUNCH": 8.4,
       "BREAKING": 8.9
-    }
+  }
   },
   {
     "make": "Lotus",
