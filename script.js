@@ -27,7 +27,7 @@ fetch('data/fm5.json')
 function renderCars(cars) {
     carGrid.innerHTML = cars.map(car => `
         <div class="car-card">
-            <img src="assets/fm5/cars${car.thumbnail}" alt="${car.make} ${car.model}">
+            <img src="assets/fm5/cars/${car.thumbnail}" alt="${car.make} ${car.model}">
             
             <div class="year-country">
                 ${car.year} ${car.make.toUpperCase()} ${getFlagEmoji(car.country)}
