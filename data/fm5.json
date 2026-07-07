@@ -6,7 +6,6 @@
     "country": "Italy",
     "class": "C",
     "rating": 460,
-    "drivetrain": "RWD-F",
     "thumbnail": "1962-ferrari-250-gto.png",
     "stats": {
       "SPEED": 6.5,
@@ -23,7 +22,6 @@
     "country": "United Kingdom",
     "class": "A",
     "rating": 609,
-    "drivetrain": "RWD-F",
     "thumbnail": "2012-aston-martin-vanquish.png",
     "stats": {
       "SPEED": 7.7,
