@@ -30,5 +30,21 @@
       "LAUNCH": 6.7,
       "BREAKING": 5.2
     }
-  }
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Corvette ZR1",
+    "year": "2009",
+    "country": "United States",
+    "class": "A",
+    "rating": 653,
+    "thumbnail": "2009-chevrolet-corvette-zr1.png",
+    "stats": {
+      "SPEED": 8.0,
+      "HANDLING": 5.1,
+      "ACCELERATION": 8.7,
+      "LAUNCH": 8.4,
+      "BREAKING": 5.4
+    }
+  }  
 ]
