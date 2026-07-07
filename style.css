@@ -1,45 +1,22 @@
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background-color: #f4f4f9; }
-header { text-align: center; margin-bottom: 30px; }
-input { padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc; }
+/* Existing styles... */
 
+/* Updated Grid for better card sizing */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.car-card {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.car-card img { 
-    width: 100%; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 5px; 
-}
-
-/* Ensure the flag icon doesn't break the layout */
-.car-card img[src*="assets/flags/"] {
-    width: 24px;
-    height: 16px;
-    margin-right: 5px;
-    border-radius: 2px;
-}
-
+/* Specific styling for the progress bar layout */
 .stat-row {
     display: grid;
     grid-template-columns: 100px 30px 1fr;
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
+    font-size: 0.9em;
 }
 
 progress {
@@ -48,7 +25,6 @@ progress {
     appearance: none;
 }
 
-/* Style the bar color for Webkit browsers (Chrome/Edge/Safari) */
 progress::-webkit-progress-value {
     background-color: #b30000; /* Ferrari Red */
 }
@@ -57,11 +33,14 @@ progress::-webkit-progress-bar {
     background-color: #eee;
 }
 
+/* Rating Badge styling */
 .rating-badge {
-    margin-top: 15px;
+    margin-top: 20px;
     display: inline-flex;
-    border: 2px solid black;
+    border: 2px solid #333;
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .class-box { background: #ffcc00; padding: 2px 8px; font-weight: bold; }
-.rating-number { padding: 2px 8px; font-weight: bold; }
+.rating-number { padding: 2px 8px; font-weight: bold; background: white; }
