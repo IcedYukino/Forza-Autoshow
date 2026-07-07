@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 
-/* 1. Grid: Tighter gap for a clean look */
+/* Grid: Keeps cards consistent */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-/* 2. Card: Compact with tighter padding */
+/* Card: Compact container */
 .car-card {
     background: #ffffff;
     border-radius: 8px;
@@ -30,18 +30,27 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* 3. Image: Using 'cover' and 'center' to make the car fill the box */
-.car-card img {
+/* Image Wrapper: The magic container that enables the zoom */
+.image-wrapper {
     width: 100%;
     height: 170px;
-    object-fit: contain;     /* This shows the full length of the car */
-    background-color: #fcfcfc; /* Light background to blend with the card */
-    padding: 10px;           /* Adds a little breathing room around the car */
-    border-radius: 4px;
+    overflow: hidden; /* Clips the zoom so it stays in the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 12px;
+    background-color: #ffffff;
 }
 
-/* 4. Text: High-impact typography */
+/* Image: Slight zoom using scale */
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the full car is loaded */
+    transform: scale(1.15); /* Slight zoom: Increase to 1.2 or 1.25 if needed */
+}
+
+/* Text: High-impact typography */
 .year-country {
     color: #999;
     font-size: 0.9em;
@@ -57,7 +66,7 @@ body {
     line-height: 1.1;
 }
 
-/* 5. Badge: Compact rating design */
+/* Badge: Compact rating design */
 .rating-badge {
     margin-top: auto; 
     display: inline-flex;
