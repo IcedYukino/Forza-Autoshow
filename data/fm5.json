@@ -47,6 +47,22 @@
       "BREAKING": 5.4
     }
   },
+    {
+    "make": "Ferrari",
+    "model": "512 TR",
+    "year": "1991",
+    "country": "Italy",
+    "class": "C",
+    "rating": 492,
+    "thumbnail": "1991-ferrari-512-tr.png",
+    "stats": {
+      "SPEED": 7.0,
+      "HANDLING": 4.7,
+      "ACCELERATION": 7.5,
+      "LAUNCH": 7.2,
+      "BREAKING": 4.7
+    }
+  },
   {
     "make": "Honda",
     "model": "#9 Target Chip Ganassi Dallara DW12",
