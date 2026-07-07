@@ -28,10 +28,14 @@ function renderCars(cars) {
     carGrid.innerHTML = cars.map(car => `
         <div class="car-card">
             <img src="assets/fm5/${car.thumbnail}" alt="${car.make} ${car.model}">
-            <p>${car.year}</p>
-            <h3>${car.make.toUpperCase()} ${car.model}</h3>
             
-            <div class="stats-container">
+            <div class="year-country">
+                ${car.year} ${car.make.toUpperCase()} ${getFlagEmoji(car.country)}
+            </div>
+            
+            <h3>${car.model.toUpperCase()}</h3>
+            
+            <div class="stats-container" style="display: none;">
                 ${Object.entries(car.stats).map(([key, value]) => `
                     <div class="stat-row">
                         <label>${key}</label>
@@ -40,6 +44,7 @@ function renderCars(cars) {
                     </div>
                 `).join('')}
             </div>
+
             <div class="rating-badge">
                 <span class="class-box">${car.class}</span>
                 <span class="rating-number">${car.rating}</span>
