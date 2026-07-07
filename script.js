@@ -1,25 +1,32 @@
-// 1. Load the data
-fetch('Forza Horizon 6.json')
+const carGrid = document.getElementById('car-grid');
+const searchInput = document.getElementById('searchInput');
+let allCars = [];
+
+// Fetch data from the fh6.json file
+fetch('data/fh6.json')
     .then(response => response.json())
     .then(data => {
-        displayCars(data);
-        
-        // 2. Add search functionality
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const filtered = data.filter(car => 
-                car.name.toLowerCase().includes(e.target.value.toLowerCase())
-            );
-            displayCars(filtered);
-        });
-    });
+        allCars = data;
+        renderCars(allCars);
+    })
+    .catch(error => console.error('Error loading data:', error));
 
-// 3. Function to render the UI
-function displayCars(cars) {
-    const grid = document.getElementById('car-grid');
-    grid.innerHTML = cars.map(car => `
+// Function to display cars
+function renderCars(cars) {
+    carGrid.innerHTML = cars.map(car => `
         <div class="car-card">
+            <img src="assets/fh6/${car.image}" alt="${car.name}">
             <h3>${car.name}</h3>
             <p>Class: ${car.class}</p>
         </div>
     `).join('');
 }
+
+// Search functionality
+searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    const filtered = allCars.filter(car => 
+        car.name.toLowerCase().includes(term)
+    );
+    renderCars(filtered);
+});
