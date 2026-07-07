@@ -47,6 +47,22 @@
       "BREAKING": 5.4
   }
   },
+    {
+    "make": "Ferrari",
+    "model": "458 Italia",
+    "year": "2009",
+    "country": "Italy",
+    "class": "A",
+    "rating": 675,
+    "thumbnail": "2009-ferrari-458-italia.png",
+    "stats": {
+      "SPEED": 8.0,
+      "HANDLING": 5.0,
+      "ACCELERATION": 9.0,
+      "LAUNCH": 8.9,
+      "BREAKING": 5.3
+  }
+  },
   {
     "make": "Ferrari",
     "model": "512 TR",
