@@ -15,18 +15,21 @@ fetch('data/fm5.json')
 function renderCars(cars) {
     carGrid.innerHTML = cars.map(car => `
         <div class="car-card">
-            <img src="assets/fm5/${car.image}" alt="${car.name}">
-            <h3>${car.name}</h3>
-            <p>Class: ${car.class}</p>
+            <img src="assets/fm5/${car.thumbnail}" alt="${car.make} ${car.model}">
+            <h3>${car.make} ${car.model}</h3>
+            <p>Year: ${car.year}</p>
+            <p>Class: ${car.class} | Rating: ${car.rating}</p>
         </div>
     `).join('');
 }
 
 // Search functionality
+// Updated to search by make or model
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     const filtered = allCars.filter(car => 
-        car.name.toLowerCase().includes(term)
+        car.make.toLowerCase().includes(term) || 
+        car.model.toLowerCase().includes(term)
     );
     renderCars(filtered);
 });
