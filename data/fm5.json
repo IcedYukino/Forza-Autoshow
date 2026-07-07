@@ -14,4 +14,21 @@
     "LAUNCH": 6.7,
     "BREAKING": 4.1
   }
+},
+{
+  "make": "Aston Martin",
+  "model": "Vanquish",
+  "year": "2012",
+  "country": "United Kingdom",
+  "class": "A",
+  "rating": 609,
+  "drivetrain": "RWD-F",
+  "thumbnail": "(2012) Aston Martin.png",
+  "stats": {
+    "SPEED": 7.7,
+    "HANDLING": 4.9,
+    "ACCELERATION": 8.2,
+    "LAUNCH": 6.7,
+    "BREAKING": 5.2
+  }
 }
