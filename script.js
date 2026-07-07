@@ -24,16 +24,26 @@ fetch('data/fm5.json')
     })
     .catch(error => console.error('Error loading data:', error));
 
-// Function to display cars
 function renderCars(cars) {
     carGrid.innerHTML = cars.map(car => `
         <div class="car-card">
             <img src="assets/fm5/${car.thumbnail}" alt="${car.make} ${car.model}">
-            <h3>${car.make} ${car.model}</h3>
-            <p>
-                Year: ${car.year} | ${getFlagEmoji(car.country)} ${car.country}
-            </p>
-            <p>Class: ${car.class} | Rating: ${car.rating}</p>
+            <p>${car.year}</p>
+            <h3>${car.make.toUpperCase()} ${car.model}</h3>
+            
+            <div class="stats-container">
+                ${Object.entries(car.stats).map(([key, value]) => `
+                    <div class="stat-row">
+                        <label>${key}</label>
+                        <span>${value}</span>
+                        <progress value="${value}" max="10"></progress>
+                    </div>
+                `).join('')}
+            </div>
+            <div class="rating-badge">
+                <span class="class-box">${car.class}</span>
+                <span class="rating-number">${car.rating}</span>
+            </div>
         </div>
     `).join('');
 }
