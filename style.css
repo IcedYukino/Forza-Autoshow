@@ -25,3 +25,11 @@ input { padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;
     object-fit: cover; 
     border-radius: 5px; 
 }
+
+/* Ensure the flag icon doesn't break the layout */
+.car-card img[src*="assets/flags/"] {
+    width: 24px;
+    height: 16px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
