@@ -1,5 +1,21 @@
 [
 {
+    "make": "Abarth",
+    "model": "500 esseesse",
+    "year": "2010",
+    "country": "Italy",
+    "class": "D",
+    "rating": 360,
+    "thumbnail": "2010-abarth-500-esseesse.png",
+    "stats": {
+      "SPEED": 5.0,
+      "HANDLING": 3.9,
+      "ACCELERATION": 6.4,
+      "LAUNCH": 6.8,
+      "BREAKING": 3.7
+}
+},    
+{
     "make": "Aston Martin",
     "model": "Vanquish",
     "year": "2012",
