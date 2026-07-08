@@ -14,7 +14,39 @@
       "LAUNCH": 6.8,
       "BREAKING": 3.7
 }
-},    
+},
+{
+    "make": "Abarth",
+    "model": "Fiat 131",
+    "year": "1980",
+    "country": "Italy",
+    "class": "D",
+    "rating": 319,
+    "thumbnail": "1980-abarth-fiat-131.png",
+    "stats": {
+      "SPEED": 4.8,
+      "HANDLING": 4.1,
+      "ACCELERATION": 6.1,
+      "LAUNCH": 6.7,
+      "BREAKING": 4.0
+}
+},
+{
+    "make": "Abarth",
+    "model": "Punto SuperSport",
+    "year": "2013",
+    "country": "Italy",
+    "class": "D",
+    "rating": 381,
+    "thumbnail": "2013-abarth-punto-supersport.png",
+    "stats": {
+      "SPEED": 5.0,
+      "HANDLING": 4.5,
+      "ACCELERATION": 6.6,
+      "LAUNCH": 6.7,
+      "BREAKING": 4.5
+}
+},       
 {
     "make": "Aston Martin",
     "model": "Vanquish",
