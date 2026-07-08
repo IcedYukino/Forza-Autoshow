@@ -120,3 +120,22 @@ body {
         grid-template-columns: 1fr; /* 1 column for phones */
     }
 }
+
+header {
+    display: flex;
+    flex-direction: column; /* Stacks H1 and Search bar vertically */
+    align-items: center;    /* Centers them horizontally */
+    justify-content: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    margin-top: 15px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 400px;      /* Keeps the search bar from getting too wide */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
