@@ -47,6 +47,22 @@
       "BREAKING": 5.4
   }
   },
+    {
+    "make": "Ferrari",
+    "model": "#62 Risi Competizione F458 Italia",
+    "year": "2011",
+    "country": "Italy",
+    "class": "R",
+    "rating": 815,
+    "thumbnail": "2011-ferrari-62-risi-competizione-f458-italia.png",
+    "stats": {
+      "SPEED": 6.7,
+      "HANDLING": 6.6,
+      "ACCELERATION": 9.1,
+      "LAUNCH": 9.1,
+      "BREAKING": 7.2
+  }
+  },
   {
     "make": "Ferrari",
     "model": "365 GTB/4",
