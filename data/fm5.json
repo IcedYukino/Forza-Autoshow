@@ -33,6 +33,22 @@
   },
   {
     "make": "Ferrari",
+    "model": "#1 Scuderia Ferrari 312 T2",
+    "year": "1976",
+    "country": "Italy",
+    "class": "R",
+    "rating": 899,
+    "thumbnail": "1976-1-scuderia-ferrari-312-t2.png",
+    "stats": {
+      "SPEED": 6.0,
+      "HANDLING": 7.4,
+      "ACCELERATION": 9.7,
+      "LAUNCH": 9.6,
+      "BREAKING": 8.3
+  }
+  },
+  {
+    "make": "Ferrari",
     "model": "#12 Risi Competizione F333 SP",
     "year": "1998",
     "country": "Italy",
@@ -81,6 +97,22 @@
   },
   {
     "make": "Ferrari",
+    "model": "250 Testa Rossa",
+    "year": "1957",
+    "country": "Italy",
+    "class": "D",
+    "rating": 397,
+    "thumbnail": "1962-ferrari-250-testa-rossa.png",
+    "stats": {
+      "SPEED": 6.4,
+      "HANDLING": 3.5,
+      "ACCELERATION": 7.8,
+      "LAUNCH": 7.2,
+      "BREAKING": 3.1
+  }
+  },    
+  {
+    "make": "Ferrari",
     "model": "365 GTB/4",
     "year": "1968",
     "country": "Italy",
@@ -95,6 +127,22 @@
       "BREAKING": 3.6
   }
   },
+  {
+    "make": "Ferrari",
+    "model": "430 Scuderia",
+    "year": "2007",
+    "country": "Italy",
+    "class": "A",
+    "rating": 662,
+    "thumbnail": "2007-ferrari-430-scuderia.png",
+    "stats": {
+      "SPEED": 7.9,
+      "HANDLING": 5.1,
+      "ACCELERATION": 8.7,
+      "LAUNCH": 8.8,
+      "BREAKING": 5.3
+  }
+  },    
   {
     "make": "Ferrari",
     "model": "458 Italia",
@@ -221,6 +269,22 @@
       "ACCELERATION": 8.6,
       "LAUNCH": 8.2,
       "BREAKING": 5.7
+  }
+  },
+  {
+    "make": "Ferrari",
+    "model": "F12berlinetta",
+    "year": "2012",
+    "country": "Italy",
+    "class": "A",
+    "rating": 661,
+    "thumbnail": "2012-ferrari-f12berlinetta.png",
+    "stats": {
+      "SPEED": 8.1,
+      "HANDLING": 5.2,
+      "ACCELERATION": 8.7,
+      "LAUNCH": 8.7,
+      "BREAKING": 5.5
   }
   },    
   {
