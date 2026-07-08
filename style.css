@@ -11,13 +11,12 @@ body {
     padding: 20px;
 }
 
-/* Grid: Updated to force exactly 7 columns */
+/* Grid: Keeps cards consistent */
 .grid {
     display: grid;
-    /* This creates exactly 7 columns of equal width */
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px; /* Slightly reduced gap to accommodate more items */
-    max-width: 98%; /* Uses almost the full width of the screen */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 15px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -31,11 +30,11 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Image Wrapper */
+/* Image Wrapper: The magic container that enables the zoom */
 .image-wrapper {
     width: 100%;
     height: 170px;
-    overflow: hidden;
+    overflow: hidden; /* Clips the zoom so it stays in the box */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,25 +42,25 @@ body {
     background-color: #ffffff;
 }
 
-/* Image: Slight zoom */
+/* Image: Slight zoom using scale */
 .image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    transform: scale(1.15);
+    object-fit: contain; /* Ensures the full car is loaded */
+    transform: scale(1.15); /* Slight zoom: Increase to 1.2 or 1.25 if needed */
 }
 
-/* Text: Adjusted font size to fit better in smaller cards */
+/* Text: High-impact typography */
 .year-country {
     color: #999;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2px;
 }
 
 .car-card h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 12px;
     text-transform: uppercase;
     line-height: 1.1;
