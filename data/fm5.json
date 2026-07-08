@@ -113,6 +113,22 @@
   },
   {
     "make": "Ferrari",
+    "model": "599 GTO",
+    "year": "2010",
+    "country": "Italy",
+    "class": "A",
+    "rating": 687,
+    "thumbnail": "2010-ferrari-599-GTO.png",
+    "stats": {
+      "SPEED": 7.7,
+      "HANDLING": 5.3,
+      "ACCELERATION": 9.0,
+      "LAUNCH": 8.7,
+      "BREAKING": 5.8
+  }
+  },
+  {
+    "make": "Ferrari",
     "model": "California",
     "year": "2008",
     "country": "Italy",
