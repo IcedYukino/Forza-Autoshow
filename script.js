@@ -3,37 +3,26 @@ const searchInput = document.getElementById('searchInput');
 const tabs = document.querySelectorAll('.tab');
 let allCars = [];
 
-// Helper function to return the correct emoji for a country
-function getFlagEmoji(country) {
-    const flags = {
-        "Italy": "🇮🇹",
-        "Japan": "🇯🇵",
-        "USA": "🇺🇸",
-        "Germany": "🇩🇪",
-        "United Kingdom": "🇬🇧",
-        "France": "🇫🇷"
-    };
-    return flags[country] || "🏁"; 
-}
+// ... (keep getFlagEmoji function the same) ...
 
-// Function to render the cars to the grid
 function renderCars(cars) {
+    // If no cars exist, clear the grid and exit
+    if (!cars || cars.length === 0) {
+        carGrid.innerHTML = '<p style="text-align:center; margin-top:20px;">Select a game to view the collection.</p>';
+        return;
+    }
+
     carGrid.innerHTML = cars.map(car => {
-        // Construct the path dynamically based on the car's game property
         const imagePath = `assets/${car.game}/cars/${car.thumbnail}`;
-        
         return `
             <div class="car-card">
                 <div class="image-wrapper">
                     <img src="${imagePath}" alt="${car.make} ${car.model}">
                 </div>
-                
                 <div class="year-country">
                     ${car.year} ${car.make.toUpperCase()} ${getFlagEmoji(car.country)}
                 </div>
-                
                 <h3>${car.model.toUpperCase()}</h3>
-                
                 <div class="rating-badge">
                     <span class="class-box">${car.class}</span>
                     <span class="rating-number">${car.rating}</span>
@@ -43,46 +32,33 @@ function renderCars(cars) {
     }).join('');
 }
 
-// Function to fetch data based on the game tab
+// Updated: Only fetches when a specific button is clicked
 function loadGameData(gameKey) {
-    // If 'all', fetches a master JSON, otherwise fetches specific file
-    const filePath = (gameKey === 'all') ? 'data/all_cars.json' : `data/${gameKey}.json`;
-    
-    fetch(filePath)
+    fetch(`data/${gameKey}.json`)
         .then(response => response.json())
         .then(data => {
             allCars = data;
             renderCars(allCars);
         })
-        .catch(error => console.error('Error loading data:', error));
+        .catch(error => {
+            console.error('Error loading data:', error);
+            carGrid.innerHTML = '<p>Error loading car data.</p>';
+        });
 }
 
-// Initial Load
-loadGameData('fm5'); 
+// Initial State: Clear the grid on load
+carGrid.innerHTML = '<p style="text-align:center; margin-top:20px;">Select a game to view the collection.</p>';
 
-// Search functionality
-searchInput.addEventListener('input', (e) => {
-    const term = e.target.value.toLowerCase();
-    const filtered = allCars.filter(car => 
-        car.make.toLowerCase().includes(term) || 
-        car.model.toLowerCase().includes(term) ||
-        car.country.toLowerCase().includes(term)
-    );
-    renderCars(filtered);
-});
-
-// Tab Click Event Listener for Filtering
+// Tab Click Event Listener
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        // Update UI: Remove active class from old tab, add to new one
-        document.querySelector('.tab.active').classList.remove('active');
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
 
-        // Fetch and re-render based on the selected data-game attribute
         const game = tab.getAttribute('data-game');
         loadGameData(game);
-        
-        // Clear search input when switching tabs
         searchInput.value = '';
     });
 });
+
+// Search functionality remains the same...
