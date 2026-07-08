@@ -11,14 +11,13 @@ body {
     padding: 20px;
 }
 
-/* Grid: Updated to allow more cards per row by using wider container and smaller minmax */
+/* Grid: Updated to force exactly 7 columns */
 .grid {
     display: grid;
-    /* Reduced minmax from 240px to 180px to fit more items */
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 15px;
-    /* Removed fixed 1100px cap to allow the grid to use the full screen width */
-    max-width: 95%;
+    /* This creates exactly 7 columns of equal width */
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px; /* Slightly reduced gap to accommodate more items */
+    max-width: 98%; /* Uses almost the full width of the screen */
     margin: 0 auto;
 }
 
