@@ -139,3 +139,28 @@ header {
     border-radius: 8px;
     font-size: 16px;
 }
+
+.filter-tabs {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tab {
+    padding: 8px 16px;
+    border: 2px solid #333;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: #ffcc00; /* Forza yellow */
+}
+
+.tab:hover {
+    background: #eee;
+}
