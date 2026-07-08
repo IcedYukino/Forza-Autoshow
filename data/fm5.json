@@ -33,6 +33,22 @@
   },
   {
     "make": "Ferrari",
+    "model": "#12 Risi Competizione F333 SP",
+    "year": "1998",
+    "country": "Italy",
+    "class": "P",
+    "rating": 990,
+    "thumbnail": "1998-ferrari-12-risi-competizione-f333-sp.png",
+    "stats": {
+      "SPEED": 7.7,
+      "HANDLING": 8.2,
+      "ACCELERATION": 9.7,
+      "LAUNCH": 9.3,
+      "BREAKING": 9.0
+  }
+  },    
+  {
+    "make": "Ferrari",
     "model": "#62 Risi Competizione F458 Italia",
     "year": "2011",
     "country": "Italy",
@@ -143,6 +159,70 @@
       "BREAKING": 4.8
   }
   },
+  {
+    "make": "Ferrari",
+    "model": "Challenge Stradale",
+    "year": "2003",
+    "country": "Italy",
+    "class": "A",
+    "rating": 616,
+    "thumbnail": "2003-ferrari-challenge-stradale.png",
+    "stats": {
+      "SPEED": 7.2,
+      "HANDLING": 5.3,
+      "ACCELERATION": 8.1,
+      "LAUNCH": 8.8,
+      "BREAKING": 5.5
+  }
+  },    
+  {
+    "make": "Ferrari",
+    "model": "Enzo Ferrari",
+    "year": "2002",
+    "country": "Italy",
+    "class": "S",
+    "rating": 719,
+    "thumbnail": "2002-ferrari-enzo-ferrari.png",
+    "stats": {
+      "SPEED": 8.1,
+      "HANDLING": 5.6,
+      "ACCELERATION": 9.0,
+      "LAUNCH": 8.9,
+      "BREAKING": 5.9
+  }
+  },    
+  {
+    "make": "Ferrari",
+    "model": "F40",
+    "year": "1987",
+    "country": "Italy",
+    "class": "A",
+    "rating": 659,
+    "thumbnail": "1987-ferrari-f40.png",
+    "stats": {
+      "SPEED": 7.5,
+      "HANDLING": 5.4,
+      "ACCELERATION": 8.7,
+      "LAUNCH": 9.0,
+      "BREAKING": 5.5
+  }
+  },
+  {
+    "make": "Ferrari",
+    "model": "F50",
+    "year": "1995",
+    "country": "Italy",
+    "class": "A",
+    "rating": 646,
+    "thumbnail": "1995-ferrari-f50.png",
+    "stats": {
+      "SPEED": 7.4,
+      "HANDLING": 5.6,
+      "ACCELERATION": 8.6,
+      "LAUNCH": 8.2,
+      "BREAKING": 5.7
+  }
+  },    
   {
     "make": "Ferrari",
     "model": "F355 Berlinetta",
