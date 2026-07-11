@@ -3,12 +3,16 @@ const searchInput = document.getElementById('searchInput');
 const tabs = document.querySelectorAll('.tab');
 let allCars = [];
 
-// ... (keep getFlagEmoji function the same) ...
+// Helper: Ensure you have this function defined elsewhere or included
+function getFlagEmoji(country) {
+    // Basic implementation: if you have a mapping, use it here.
+    // Otherwise, this serves as a placeholder.
+    return "🏁"; 
+}
 
 function renderCars(cars) {
-    // If no cars exist, clear the grid and exit
     if (!cars || cars.length === 0) {
-        carGrid.innerHTML = '<p style="text-align:center; margin-top:20px;">Select a game to view the collection.</p>';
+        carGrid.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">No cars found.</p>';
         return;
     }
 
@@ -17,7 +21,7 @@ function renderCars(cars) {
         return `
             <div class="car-card">
                 <div class="image-wrapper">
-                    <img src="${imagePath}" alt="${car.make} ${car.model}">
+                    <img src="${imagePath}" alt="${car.make} ${car.model}" onerror="this.src='assets/placeholder.png'">
                 </div>
                 <div class="year-country">
                     ${car.year} ${car.make.toUpperCase()} ${getFlagEmoji(car.country)}
@@ -32,7 +36,16 @@ function renderCars(cars) {
     }).join('');
 }
 
-// Updated: Only fetches when a specific button is clicked
+// Search Logic
+searchInput.addEventListener('input', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    const filtered = allCars.filter(car => 
+        car.make.toLowerCase().includes(searchTerm) || 
+        car.model.toLowerCase().includes(searchTerm)
+    );
+    renderCars(filtered);
+});
+
 function loadGameData(gameKey) {
     fetch(`data/${gameKey}.json`)
         .then(response => response.json())
@@ -42,23 +55,16 @@ function loadGameData(gameKey) {
         })
         .catch(error => {
             console.error('Error loading data:', error);
-            carGrid.innerHTML = '<p>Error loading car data.</p>';
+            carGrid.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">Error loading car data.</p>';
         });
 }
 
-// Initial State: Clear the grid on load
-carGrid.innerHTML = '<p style="text-align:center; margin-top:20px;">Select a game to view the collection.</p>';
-
-// Tab Click Event Listener
+// Tabs
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
-
-        const game = tab.getAttribute('data-game');
-        loadGameData(game);
+        loadGameData(tab.getAttribute('data-game'));
         searchInput.value = '';
     });
 });
-
-// Search functionality remains the same...
