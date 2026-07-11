@@ -49,8 +49,42 @@
       "LAUNCH": 6.7,
       "BREAKING": 4.5
 }
-},       
+},
 {
+    "make": "Acura",
+    "model": "Integra Type-R",
+    "year": "2001",
+    "country": "United States",
+    "class": "D",
+    "rating": 390,
+    "game": "fm5",
+    "thumbnail": "2001-acura-integra-type-r.png",
+    "stats": {
+      "SPEED": 5.7,
+      "HANDLING": 4.4,
+      "ACCELERATION": 6.7,
+      "LAUNCH": 7.0,
+      "BREAKING": 4.2
+  }
+  },
+  {
+    "make": "Acura",
+    "model": "RSX Type-S",
+    "year": "2002",
+    "country": "United States",
+    "class": "D",
+    "rating": 371,
+    "game": "fm5",
+    "thumbnail": "2002-acura-rsx-type-s.png",
+    "stats": {
+      "SPEED": 5.7,
+      "HANDLING": 4.1,
+      "ACCELERATION": 6.6,
+      "LAUNCH": 6.9,
+      "BREAKING": 3.9
+  }
+  },  
+  {
     "make": "Aston Martin",
     "model": "Vanquish",
     "year": "2012",
