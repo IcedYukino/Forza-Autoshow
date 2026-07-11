@@ -6,7 +6,7 @@
     "country": "Italy",
     "class": "D",
     "rating": 360,
-    "game": "fm5"
+    "game": "fm5",
     "thumbnail": "2010-abarth-500-esseesse.png",
     "stats": {
       "SPEED": 5.0,
@@ -23,7 +23,7 @@
     "country": "Italy",
     "class": "D",
     "rating": 319,
-    "game": "fm5"
+    "game": "fm5",
     "thumbnail": "1980-abarth-fiat-131.png",
     "stats": {
       "SPEED": 4.8,
@@ -40,7 +40,7 @@
     "country": "Italy",
     "class": "D",
     "rating": 381,
-    "game": "fm5"
+    "game": "fm5",
     "thumbnail": "2013-abarth-punto-supersport.png",
     "stats": {
       "SPEED": 5.0,
@@ -57,7 +57,7 @@
     "country": "United Kingdom",
     "class": "A",
     "rating": 609,
-    "game": "fm5"
+    "game": "fm5",
     "thumbnail": "2012-aston-martin-vanquish.png",
     "stats": {
       "SPEED": 7.7,
@@ -74,7 +74,7 @@
     "country": "United States",
     "class": "A",
     "rating": 653,
-    "game": "fm5"
+    "game": "fm5",
     "thumbnail": "2009-chevrolet-corvette-zr1.png",
     "stats": {
       "SPEED": 8.0,
@@ -91,7 +91,7 @@
     "country": "Italy",
     "class": "R",
     "rating": 899,
-    "game": "fm5"
+    "game": "fm5",
     "thumbnail": "1976-ferrari-1-scuderia-ferrari-312-t2.png",
     "stats": {
       "SPEED": 6.0,
@@ -108,7 +108,7 @@
     "country": "Italy",
     "class": "P",
     "rating": 990,
-    "game": "fm5"  
+    "game": "fm5",
     "thumbnail": "1998-ferrari-12-risi-competizione-f333-sp.png",
     "stats": {
       "SPEED": 7.7,
@@ -125,7 +125,7 @@
     "country": "Italy",
     "class": "R",
     "rating": 815,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2011-ferrari-62-risi-competizione-f458-italia.png",
     "stats": {
       "SPEED": 6.7,
@@ -142,7 +142,7 @@
     "country": "Italy",
     "class": "C",
     "rating": 460,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1962-ferrari-250-gto.png",
     "stats": {
       "SPEED": 6.5,
@@ -159,7 +159,7 @@
     "country": "Italy",
     "class": "D",
     "rating": 397,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1957-ferrari-250-testa-rossa.png",
     "stats": {
       "SPEED": 6.4,
@@ -176,7 +176,7 @@
     "country": "Italy",
     "class": "C",
     "rating": 408,
-    "game": "fm5"  
+    "game": "fm5", 
     "thumbnail": "1968-ferrari-365-gtb4.png",
     "stats": {
       "SPEED": 6.6,
@@ -193,7 +193,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 662,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2007-ferrari-430-scuderia.png",
     "stats": {
       "SPEED": 7.9,
@@ -210,7 +210,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 675,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2009-ferrari-458-italia.png",
     "stats": {
       "SPEED": 8.0,
@@ -227,7 +227,7 @@
     "country": "Italy",
     "class": "C",
     "rating": 492,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1991-ferrari-512-tr.png",
     "stats": {
       "SPEED": 7.0,
@@ -244,7 +244,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 687,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2010-ferrari-599-gto.png",
     "stats": {
       "SPEED": 7.7,
@@ -261,7 +261,7 @@
     "country": "Italy",
     "class": "B",
     "rating": 527,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2008-ferrari-california.png",
     "stats": {
       "SPEED": 7.5,
@@ -278,7 +278,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 616,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2003-ferrari-challenge-stradale.png",
     "stats": {
       "SPEED": 7.2,
@@ -295,7 +295,7 @@
     "country": "Italy",
     "class": "S",
     "rating": 719,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2002-ferrari-enzo-ferrari.png",
     "stats": {
       "SPEED": 8.1,
@@ -312,7 +312,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 659,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1987-ferrari-f40.png",
     "stats": {
       "SPEED": 7.5,
@@ -329,7 +329,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 646,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1995-ferrari-f50.png",
     "stats": {
       "SPEED": 7.4,
@@ -346,7 +346,7 @@
     "country": "Italy",
     "class": "A",
     "rating": 661,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2012-ferrari-f12berlinetta.png",
     "stats": {
       "SPEED": 8.1,
@@ -363,7 +363,7 @@
     "country": "Italy",
     "class": "B",
     "rating": 528,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1994-ferrari-f355-berlinetta.png",
     "stats": {
       "SPEED": 7.0,
@@ -380,7 +380,7 @@
     "country": "Italy",
     "class": "B",
     "rating": 552,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "1984-ferrari-gto.png",
     "stats": {
       "SPEED": 6.9,
@@ -397,7 +397,7 @@
     "country": "Japan",
     "class": "X",
     "rating": 999,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2013-honda-9-target-chip-ganassi-dallara-dw12.png",
     "stats": {
       "SPEED": 8.6,
@@ -414,7 +414,7 @@
     "country": "United Kingdom",
     "class": "B",
     "rating": 580,
-    "game": "fm5"  
+    "game": "fm5",  
     "thumbnail": "2012-lotus-exige-s.png",
     "stats": {
       "SPEED": 6.6,
