@@ -1,0 +1,17 @@
+  {
+    "make": "Acura",
+    "model": "RSX Type-S",
+    "year": "2002",
+    "country": "United States",
+    "class": "E",
+    "rating": 232,
+    "game": "fm3",
+    "thumbnail": "2002-acura-rsx-type-s.png",
+    "stats": {
+      "SPEED": 5.3,
+      "HANDLING": 4.7,
+      "ACCELERATION": 4.0,
+      "LAUNCH": 4.6,
+      "BREAKING": 4.5
+  }
+  }
