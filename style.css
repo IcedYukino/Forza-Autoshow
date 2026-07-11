@@ -84,10 +84,9 @@ body {
     overflow: hidden;
 }
 
-.class-box {
-    background: #ffcc00;
-    padding: 2px 10px;
-    font-weight: 800;
+.car-card.class-f .class-box {
+    background-color: #2596be;
+    color: white;
 }
 
 .rating-number {
